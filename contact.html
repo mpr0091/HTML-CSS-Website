@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact: Charles Frederick Goldie</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+	<header>
+		<img id="bannerimage" src="img/banner.png" alt="C.F. Goldie">
+		<img id="bannerimgsmall" src="img/small-banner.png" alt="C.F. Goldie">
+	</header>
+
+	<nav>
+		<ul id="bignav">
+			<li> <a href="index.html">Home</a></li>
+			<li> <a href="biography.html">Biography</a></li>
+			<li> <a href="gallery.html">Gallery</a></li>
+			<li> <a href="blog.html">Blog</a></li>
+			<li> <a href="about.html">About Us</a></li>
+			<li> <a class="active" href="contact.html">Contact Us</a></li>
+		</ul>
+		
+		<ul id="smallnav">
+			<li>
+				<a href="index.html">Home</a></li>
+			</li>
+			
+			<div class="dropdown">
+				<li class="dropbtn">Menu
+					<div id="dropdown-menu">
+						<a href="biography.html">Biography</a>
+						<a href="gallery.html">Gallery</a>
+						<a href="blog.html">Blog</a>
+						<a href="about.html">About Us</a>
+						<a class="active" href="contact.html">Contact Us</a>
+					</div>
+				</li>
+		</ul>
+		
+	</nav>
+	
+	<div id="content">
+		<div id="fulltext">
+			<h1>Newsletter</h1>
+			<br>
+			<p>
+			We send a monthly newsletter via e-mail with updates on the latest artwork added to our collection. Sign up below!
+			</p>
+			<br>
+			
+			<form action="MAILTO:great-art-news@sampleemail.com" method="post" onsubmit="return confirm('By sumbitting this you accept our privacy policy as outlined below');">
+				First Name:<br>
+				<input type="text" name="firstname" required><br>
+				Last Name:<br>
+				<input type="text" name="lastname>" required><br>
+				E-mail:<br>
+				<input type="text" name="email" required><br><br>
+				<input type="submit" value="Send">
+			</form>
+			
+			<h1>Feedback</h1>
+			<br>
+			<p>We would love to hear feedback about your experience using this site. Simply fill out the form below!
+			</p>
+			<br>
+			
+			<form action="MAILTO:great-art-feedback@sampleemail.com" method="post" onsubmit="return confirm('By sumbitting this you accept our privacy policy as outlined below');">
+				First Name:<br>
+				<input type="text" name="firstname" required><br>
+				Last Name:<br>
+				<input type="text" name="lastname>" required><br>
+				E-mail:<br>
+				<input type="text" name="email" required><br>
+				Your Message: <br>
+				<textarea name="comment" rows="6" required></textarea><br><br>
+				<input type="submit" value="Send">
+			</form>
+			<br>
+			<h1>Privacy</h1>
+			<p>It is our pleasure to provide these artworks and the associated information to the viewer. We store names and e-mail addresses securely, and may use them for internal data analysis. We will not sell or provide your information to any other party.
+			<p>
+		</div>
+		
+	</div>
+
+	
+	
+	<footer>
+		<ul>
+			<li>&#169; Great-Art 2016. All rights Reserved. </li>
+			<li>Sign up to our newsletter <a href="contact.html">here!</a></li>
+		</ul>
+		
+	</footer>
+</body>
+
+</html>

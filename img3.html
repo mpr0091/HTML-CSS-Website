@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Charles Frederick Goldie: All 'e same t'e Pakeha</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+	<header>
+		<img id="bannerimage" src="img/banner.png" alt="C.F. Goldie">
+		<img id="bannerimgsmall" src="img/small-banner.png" alt="C.F. Goldie">
+	</header>
+
+	<nav>
+		<ul id="bignav">
+			<li> <a href="index.html">Home</a></li>
+			<li> <a href="biography.html">Biography</a></li>
+			<li> <a href="gallery.html">Gallery</a></li>
+			<li> <a href="blog.html">Blog</a></li>
+			<li> <a href="about.html">About Us</a></li>
+			<li> <a href="contact.html">Contact Us</a></li>
+		</ul>
+		
+		<ul id="smallnav">
+			<li>
+				<a href="index.html">Home</a></li>
+			</li>
+			
+			<div class="dropdown">
+				<li class="dropbtn">Menu
+					<div id="dropdown-menu">
+						<a href="biography.html">Biography</a>
+						<a href="gallery.html">Gallery</a>
+						<a href="blog.html">Blog</a>
+						<a href="about.html">About Us</a>
+						<a href="contact.html">Contact Us</a>
+					</div>
+				</li>
+		</ul>
+		
+	</nav>
+	
+	<div id="content">
+		<div id="contenttext">
+			<h1>All 'e same t'e Pakeha</h1>
+			<br>
+			<h2>1905</h2>
+			<br>
+			<p>
+			Possibly the most well-known Maori portrait painted by Goldie, a portrait of a laughing Te Aho-te-Rangi Wharepu of Ngati Mahuta wearing a bowler hat and European style suit.
+			</p>
+			<br>
+			Te Aho o te Rangi Wharepu, or Te Aho for short, was born about 1811 and became a famous tohunga of the Ngati Mahuta.
+			<br>
+			<br>
+			He was a contemporary of Potatau, the first Maori King, who in his younger days was known as Te Whero Whero, and he accompanied him on many of his campaigns including at least one as far north as Whangarei.
+			<br>
+			<br>
+			Later in life he used his great knowledge of Maori lore to the benefit of his people. He was a noted authority on mythology and an expert on canoe architecture and related culture.
+
+		</div>
+		
+		<figure>
+			<img id="theImage" src="img/3.jpg" alt="All 'e same t'e Pakeha - 1905">
+			<figcaption>Click for Full-Screen</figcaption>
+		</figure>
+		
+		
+		<div id="modal1" class="modal">
+		<span class="close">×</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+		</div>
+		
+	</div>
+
+	
+	
+	<footer>
+		<ul>
+			<li>&#169; Great-Art 2016. All rights Reserved. </li>
+			<li>Sign up to our newsletter <a href="contact.html">here!</a></li>
+		</ul>
+		
+	</footer>
+	
+	<script>
+	var modal = document.getElementById('modal1');
+
+	var img = document.getElementById('theImage');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		modalImg.alt = this.alt;
+		captionText.innerHTML = this.alt;
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() { 
+		modal.style.display = "none";
+	}
+
+	</script>
+
+</body>
+
+</html>
